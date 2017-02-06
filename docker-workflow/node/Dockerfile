@@ -2,13 +2,13 @@
 FROM    ubuntu:trusty
 
 # File Author / Maintainer
-MAINTAINER Anand Mani Sankar
+MAINTAINER Kapil Singi
 
 # Install Node.js and other dependencies
 RUN apt-get update && \
     apt-get -y install curl && \
     curl -sL https://deb.nodesource.com/setup | sudo bash - && \
-    apt-get -y install python build-essential nodejs
+    apt-get -y install build-essential nodejs
 
 # Install nodemon
 RUN npm install -g nodemon
